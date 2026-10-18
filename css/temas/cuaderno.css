@@ -1,0 +1,23 @@
+/*
+ * Tema "cuaderno": solo define colores, letras y bordes.
+ * Para crear otro tema se copia este archivo con otro nombre,
+ * se cambian los valores y se pone el nombre en Pagina::TEMA.
+ */
+:root {
+    --color-fondo: #f6f4ee;
+    --color-superficie: #ffffff;
+    --color-texto: #2b2b2b;
+    --color-suave: #6b6b6b;
+    --color-primario: #2f6f73;
+    --color-primario-texto: #ffffff;
+    --color-acento: #e0a43b;
+    --color-borde: #d9d4c7;
+    --color-error: #b3412f;
+    --color-exito: #3c7a3f;
+
+    --fuente: "Segoe UI", Arial, sans-serif;
+    --fuente-codigo: Consolas, "Courier New", monospace;
+
+    --radio: 6px;
+    --sombra: 0 1px 3px rgba(0, 0, 0, 0.12);
+}

@@ -1,0 +1,66 @@
+/* Diagrama de Venn sencillo: solo variables del tema */
+.venn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 30px;
+}
+
+.venn-circulo {
+    width: 230px;
+    height: 230px;
+    border: 3px solid var(--color-primario);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    position: relative;
+    background: var(--color-superficie);
+    font-family: var(--fuente-codigo);
+    font-size: 0.9em;
+    word-break: break-word;
+}
+
+.venn-a {
+    justify-content: flex-start;
+    margin-right: -70px;
+    border-color: var(--color-primario);
+}
+
+.venn-b {
+    justify-content: flex-end;
+    text-align: right;
+    border-color: var(--color-acento);
+}
+
+.venn-etiqueta {
+    position: absolute;
+    top: -26px;
+    font-weight: bold;
+    font-family: var(--fuente);
+}
+
+.venn-a .venn-etiqueta { left: 10px; color: var(--color-primario); }
+.venn-b .venn-etiqueta { right: 10px; color: var(--color-texto); }
+
+.venn-contenedor {
+    position: relative;
+    display: flex;
+}
+
+.venn-centro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    text-align: center;
+    font-family: var(--fuente-codigo);
+    font-size: 0.9em;
+    word-break: break-word;
+}
+
+@media (max-width: 560px) {
+    .venn-circulo { width: 160px; height: 160px; font-size: 0.75em; padding: 0 10px; }
+    .venn-a { margin-right: -45px; }
+    .venn-centro { width: 60px; }
+}
